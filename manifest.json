@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Carbon Emission Calculator",
+    "version": "1.0",
+    "description": "Estimate carbon emissions for Amazon shipments",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.amazon.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
