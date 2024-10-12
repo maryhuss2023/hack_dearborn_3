@@ -7,13 +7,17 @@
       "activeTab",
       "scripting"
     ],
+    "icons": {
+      "logo": "images/Logo.png",
+      "label": "images/Label.png"
+    },
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "hello_extensions.png"
+      "default_icon": "Logo.png"
     },
     "content_scripts": [
       {
-        "matches": ["*://www.amazon.com/*"],
+        "matches": ["https://www.amazon.com/*"],
         "js": ["content.js"]
       }
     ]
