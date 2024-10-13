@@ -6,7 +6,7 @@ document.getElementById("calculate").addEventListener("click", () => {
         amazon_url: amazon_url
     }, (response) => {
         if (response.co2) {
-            document.getElementById("result").innerText = `CO2 Emissions: ${response.co2} kg`;
+            document.getElementById("result").innerText = `CO2 Emissions: ${response.co2} g`;
         } else {
             document.getElementById("result").innerText = "Error calculating CO2";
         }
