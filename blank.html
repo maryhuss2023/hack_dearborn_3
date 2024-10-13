@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CO2 Emission Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; }
+        input { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>CO2 Emission Calculator</h1>
+    <label for="distance">Distance (km):</label>
+    <input type="number" id="distance" placeholder="Distance"><br>
+    
+    <label for="weight">Weight (g):</label>
+    <input type="number" id="weight" placeholder="Weight"><br>
+    
+    <label for="transport">Transport Method:</label>
+    <select id="transport">
+        <option value="truck">Truck</option>
+        <option value="ship">Ship</option>
+        <option value="train">Train</option>
+    </select><br>
+
+    <button id="calculate">Calculate CO2</button>
+
+    <div id="result"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+

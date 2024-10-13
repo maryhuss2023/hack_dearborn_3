@@ -1,25 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Amazon Carbon Emission Calculator",
-    "version": "1.0",
-    "description": "Estimate carbon emissions for Amazon shipments",
-    "permissions": [
-      "activeTab",
-      "scripting"
-    ],
-    "icons": {
-      "logo": "images/Logo.png",
-      "label": "images/Label.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "Logo.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://www.amazon.com/*"],
-        "js": ["content.js"]
-      }
-    ]
+  "manifest_version": 3,
+  "name": "CO2 Emission Calculator",
+  "version": "1.0",
+  "description": "Calculates the CO2 emissions of Amazon product shipments.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   }
+}
   
