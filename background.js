@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                amazon_url: request.amazon_url  // Use the hardcoded URL
+                amazon_url: request.amazon_url  
             })
         })
         .then(response => response.json())
@@ -17,6 +17,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             console.error('Error:', error);
             sendResponse({ error: 'Failed to calculate CO2.' });
         });
-        return true;  // Ensures async response handling
+        return true;  
     }
 });
